@@ -1,1 +1,34 @@
-a.buttons { color: gold }
+body.custom-body{
+    padding: 10px 50px 0 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #232323;
+  background-color: #E4DBF0;
+  margin: 0;
+  line-height: 1.8em;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+header.custom-header {
+
+    background-color: #572C7F;
+    color: #FDFDFB;
+    width: 170px;
+    float: left;
+    position: fixed;
+    border: 1px solid #000;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 34px 25px 22px 50px;
+    margin: 30px 25px 0 0;
+    -webkit-font-smoothing: antialiased;
+
+
+
+
+}
