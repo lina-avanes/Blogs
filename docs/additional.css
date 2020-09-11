@@ -30,13 +30,25 @@ header.custom-header {
 
 }
 
-pre.newpre {
 
-   
+pre.mypre{
   
+  padding: 2px;
+  background: #000000;
+  border-radius: 4px;
+  border: 6px solid #4d0a49;
+  overflow: auto;
+  overflow-y: hidden;
+  margin-bottom: 32px;
 
 }
 
-code.newcode , pre.newpre{
+code.mycode, pre.mypre {
+  font-family: Monaco, "Bitstream Vera Sans Mono",
+   "Lucida Console", Terminal, monospace;
+  color: rgb(202, 143, 202);
+  font-size: 14px; 
+
+
 
 }
