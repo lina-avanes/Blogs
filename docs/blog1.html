@@ -67,7 +67,8 @@
 
      <p><strong>Follow the steps below to change your MAC:</strong></p>
 
-     <p><strong>STEP 1: Checking the actual MAC</strong></p><HR>
+     <!-- STEP 1 -->
+     <p class="my-paragraphs"><strong>STEP 1: Checking the actual MAC</strong></p><HR>
      <p><li>Go to your terminal and use the ifconfig command to choose your NIC.</li></p>
         
      <pre class="mypre">
@@ -78,10 +79,11 @@
          the red box.</li> </p> 
       
       <img src="assets/blog1 (1).png" ></p>
+      <br><br>
 
 
       <!-- STEP 2 -->
-    <p><strong>STEP 2: Basic Python script to change MAC</strong></p><HR>
+    <p class="my-paragraphs"><strong>STEP 2: Basic Python script to change MAC</strong></p><HR>
     <p><li>Now type nano mac_changer.py to start your script</li></p>
     <pre class="mypre">
     <code class="mycode">nano mac_changer.py</code></pre>
@@ -97,30 +99,34 @@
       subprocess.call("ifconfig enp0s3 up", shell=True)<br>
         </code>
         </pre>
-
+        <br><br>
 
     
          <!-- STEP 3 -->
-    <p><strong>STEP 3: Run mac_changer.py</strong></p><HR>
+    <p class="my-paragraphs"><strong>STEP 3: Run mac_changer.py</strong></p><HR>
     <p><li>Run the script by typing "python3 mac_changer.py" in the terminal</li></p>
     <pre class="mypre">
     <code class="mycode">python3 mac_changer.py</code></pre>
     <p><li>If you get no error after running the script then you have done 
       everything correctly
     </li></p>
-         
-    <p><strong>STEP 4: Confirm that your MAC has been changes</strong></p><HR>
+    <br><br>
+
+
+         <!-- STEP 4 -->
+    <p class="my-paragraphs"><strong>STEP 4: Confirm that your MAC has been changes</strong></p><HR>
     <p><li>Use the command "ifconfig" along with your NIC name to see if your
       MAC has been changed
     </li></p>
     <p><li>Since my NIC name is "enp0s3" I will type the following command in
-      the terminal    </li></p>
+      the terminal </li></p>
       <pre class="mypre">
         <code class="mycode">ifconfig enp0s3</code></pre>
       <p><li>As you can see my MAC has been changed to 00:11:22:01:23:45</li></p>
       
       
       <img src="assets/blog1 (4).png" ></p>
+      <br><br>
 
     
  
