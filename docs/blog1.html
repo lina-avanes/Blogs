@@ -80,21 +80,37 @@
       <img src="assets/blog1 (1).png" ></p>
 
 
-        <p><strong>STEP 2: Basic Python script to change MAC</strong></p><HR>
+      <!-- STEP 2 -->
+    <p><strong>STEP 2: Basic Python script to change MAC</strong></p><HR>
+    <p><li>Now type nano mac_changer.py to start your script</li></p>
+    <pre class="mypre">
+    <code class="mycode">nano mac_changer.py</code></pre>
 
-
-    
+    <p><li>Start typing these commands in your mac_changer.py script</li></p>
+    <p><li>mac_changer.py will change your MAC to 00:11:22:01:23:45</li></p>
      <pre class="mypre">
       <code class="mycode">
       #!/usr/bin/env python<br>
       import subprocess<br>
-                
-      subprocess.call("ifconfig enp0s3 down", shell=True)<br>
+      subprocess.call("ifconfig enp0s3 down", shell=True)<BR>
       ubprocess.call("ifconfig enp0s3 hw ether 00:11:22:01:23:45", shell=True)<br>
       subprocess.call("ifconfig enp0s3 up", shell=True)<br>
         </code>
         </pre>
+
+
+    
+         <!-- STEP 3 -->
+    <p><strong>STEP 3: Run mac_changer.py</strong></p><HR>
+    <p><li>Run the script by typing "python3 mac_changer.py" in the terminal</li></p>
+    <pre class="mypre">
+    <code class="mycode">python3 mac_changer.py</code></pre>
+    <p><li>If you get no error after running the script then you have done 
+      everything correctly
+    </li></p>
          
+    <p><strong>STEP 4: Confirm that your MAC has been changes</strong></p><HR>
+      <img src="assets/blog1 (4).png" ></p>
 
     
  
