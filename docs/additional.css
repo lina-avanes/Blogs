@@ -31,15 +31,17 @@ header.custom-header {
 }
 
 
+
+
 pre.mypre{
   
-  padding: 2px;
+  padding: 0px;
   background: #000000;
   border-radius: 4px;
   border: 6px solid #4d0a49;
   overflow: auto;
   overflow-y: hidden;
-  margin-bottom: 32px;
+  
 
 }
 
@@ -49,6 +51,8 @@ code.mycode, pre.mypre {
   color: rgb(202, 143, 202);
   font-size: 14px; 
 
-
-
 }
+
+
+
+
