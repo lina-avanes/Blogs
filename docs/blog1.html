@@ -82,6 +82,7 @@
       <br><br>
 
 
+    
       <!-- STEP 2 -->
     <p class="my-paragraphs"><strong>STEP 2: Basic Python script to change MAC</strong></p><HR>
     <p><li>Now type nano mac_changer.py to start your script</li></p>
@@ -95,10 +96,13 @@
       #!/usr/bin/env python<br>
       import subprocess<br>
       subprocess.call("ifconfig enp0s3 down", shell=True)<BR>
-      ubprocess.call("ifconfig enp0s3 hw ether 00:11:22:01:23:45", shell=True)<br>
+      subprocess.call("ifconfig enp0s3 hw ether 00:11:22:01:23:45", shell=True)<br>
       subprocess.call("ifconfig enp0s3 up", shell=True)<br>
         </code>
         </pre>
+
+        <p>To learn more about this script click <a href="blog1-script.html">here.</a></p>
+        
         <br><br>
 
     
@@ -128,6 +132,7 @@
       <img src="assets/blog1 (4).png" ></p>
       <br><br>
 
+      <p> And that is ONE way how you can change your MAC address.</p>
     
  
       </section>

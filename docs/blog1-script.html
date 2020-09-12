@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" type="text/css" href="additional.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Lina's Blog</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<link rel="canonical" href="http://localhost:4000/Blogs/" />
+<meta property="og:url" content="http://localhost:4000/Blogs/" />
+<meta property="og:site_name" content="Your awesome title" />
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"Your awesome title","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","url":"http://localhost:4000/Blogs/","name":"Your awesome title","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/Blogs/assets/css/style.css?v=">
+    <script src="/Blogs/assets/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body class="custom-body"> 
+    <div class="wrapper">
+      <header class="custom-header">
+        <h1 class="header">Lina's Blogs</h1>
+        <p class="header"> Welcome to my webpage. Here, I will share weekly 
+            blogs for my CIT 480 class.
+        </p>
+
+
+        <!-- Nav & BUttons -->
+        <nav>
+          <ul class ="nav_links">
+
+          <li><a class="buttons github" href="default.html"> Home </a></li>
+          <li><a class="buttons github" href="all-blogs.html">All Blogs </a></li>
+          <li><a class="buttons github" href="https://github.com/lina-avanes/Blogs">View  My Github </a></li>
+          
+
+          <ul>
+        </nav>
+      </header>
+
+
+
+    <section>
+      <h1>Blog 1: Changing MAC Addresses</h1>  
+
+    
+    
+      <p> <strong>Python script simplified:</strong></p>
+
+
+      <!-- STEP 2 -->
+      
+      <p><li>In the first line add the Python shebang using --> 
+           <code >#!/usr/bin/env python</code> </li></p>
+     
+        <p><li>The second line of code will import subprocess module 
+            The subprocess is need <br> to execute bash commands through python -->
+        <code> import subprocess </code></li></p>
+
+        <p><li> The third line will use the “subprocess.call”. The "call" function just means that it 
+            would not call the next command until it is done with the current command. “ifconfig 
+            enp0s3 down” will bring down the interface. The “Shell=True” will pass the argument --> 
+        <code> subprocess.call("ifconfig enp0s3 down", shell=True) </code> </li></p>
+
+        <p><li> The fourth line of code will change your  current MAC address 
+            to your desired MAC --> <code> subprocess.call("ifconfig enp0s3 hw ether
+                 00:11:22:01:23:45", shell=True)</code></li></p>
+
+        
+                 <p><li>The last line will turn your interface on and now your MAC has been changed -->
+                     <code>subprocess.call("ifconfig enp0s3 up", shell=True)</code>
+                 </li></p>
+
+    
+
+     <pre class="mypre">
+      <code class="mycode">
+      #!/usr/bin/env python<br>
+      import subprocess<br>
+      subprocess.call("ifconfig enp0s3 down", shell=True)<BR>
+      subprocess.call("ifconfig enp0s3 hw ether 00:11:22:01:23:45", shell=True)<br>
+      subprocess.call("ifconfig enp0s3 up", shell=True)<br>
+        </code>
+        </pre>
+
+        
+
+        <button> <a href="blog1.html">Click here to go back</a></button>
+        
+        <br><br>
+
+    
+
+  
+
+    
+ 
+      </section>
+
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
