@@ -63,3 +63,11 @@ code.in-line-code {
 color: tomato;
 
 }
+
+p.box{
+  background: rgb(230, 208, 180);
+  width: 150px;
+  border: 8px solid rgb(79, 39, 112);
+  padding: 30px;
+  margin: 20px;
+}
