@@ -56,32 +56,93 @@
         <h1>Blog 2: File Permissions In Linux</h1>  
         <p>When looking at Linux file permissions, at first, they might seem complicating. 
           However, once learning the meanings of these permissions, they will no longer 
-          seem difficult. Lets get started. </p>  <img src="assets/files.jpg">
+          seem difficult. Lets get started. </p>  <img src="assets/BLOG2-PIC (1).JPG">
        
 
-          <p class="my-paragraphs"> Getting started</p>
-       <strong><p>Know what each symbol and letter means in file permissions.</h2> </strong><br></p>
+       <strong><p class="my-paragraphs"> Getting started</p> <hr></strong> 
+       <li>Figure 1 shows what each symbol and letter means in file
+        permissions.</li><br>
 
+<<<<<<< HEAD
         <p1>
+=======
+        <p class="boxes">
+>>>>>>> 011fb7e69ad9f1ba8f0359d4808a9ea817a3f78b
           
           "-" --> File <br>
           "d" --> Directory <br>
           "r" --> Read <br>
           "w" --> Wrire <br>
           "x" --> Execute 
+<<<<<<< HEAD
         </p1> <br>
+=======
+        </p> 
+>>>>>>> 011fb7e69ad9f1ba8f0359d4808a9ea817a3f78b
         
-        <strong>&nbsp &nbsp &nbsp Figure 1</strong>
+        <strong> &nbsp &nbsp &nbsp Figure 1</strong> <br><br>
 
-        <p>Now that we know what each letter and symbol means, we can 
-          have an idea of how to read and understand the permission below: <br>
+        <li>Now that we know what each letter and symbol 
+          means, we can move on and analyze an actual file permission 
+          example shown in figure 2</li> <br>
 
-          <p class="boxes">"-rwxrwxrwx</p> 
-        </p>
+          <p class="boxes">-rwxrwxr--</p> 
+          <strong> &nbsp &nbsp &nbsp Figure 2</strong> <br><br>
+
+          
+          <li>In order to understand the file permission in figure 2, we need 
+            to know that it is consist of 3 parts. Figure 3 separates the three 
+            parts and goes over what each part means.</li><br>
 
 
-         
+           <p class="boxes"> -rwx  rwx  r-- <br>
+           
+          </p>
+            <strong> &nbsp &nbsp &nbsp Figure 3</strong> <br><br>
 
+            <li> In figure 3, the “-” means that it is a file and not a directory. <br></li>
+
+            <li>The first part/group which is "-rwx" belongs to the owners of the file. 
+              It means that the owners can read,write, and execute the file.</li>   
+            <li> The second part/group which is "rwx" displays the permissions for the 
+              group. It means that any user in a specific group can read,write, and execute the file. </li>
+            <li> The third part/group  which is "r--" is for the world or simply any
+               other user who is not the owner and part of the group can ONLY read the file. 
+            </li> <br><br>
+          </p>
+
+         <strong><p class="my-paragraphs"> How to set permissions</p></strong><hr>
+
+         <li>In order to set permission, use the “chmod” command and then use one of the 
+           options form figure 4 along with a “+” and also the permission, "r", "w", "x" that you 
+           would like to assign and the filename. It would look like figure 5.</li> <br>
+         <p class="boxes">
+           u --> user <br>
+           g --> group <br>
+           o --> other <br>
+         </p> 
+         <strong> &nbsp &nbsp &nbsp Figure 4</strong> <br><br>
+
+
+         <p class="boxes">
+          chmod o+w filename
+
+        </p> 
+        <strong> &nbsp &nbsp &nbsp Figure 5</strong> <br><br>
+
+        <li>If you use a “+” sign, that means you are assigning permissions, but if you use “-” 
+          sign, that means that you are taking away the permissions. </li> <br> <br>
+
+          <strong><p class="my-paragraphs"> Examples</p></strong><hr>
+        <strong>Below are some example of changing file permissions.  </strong> <br> <br>
+        <strong>Example 1</strong>
+        <img src="assets/BLOG2-PIC (2).JPG"> <br><br>
+
+        <strong>Example 2</strong>
+        <img src="assets/BLOG2-PIC (3).JPG"> <br><br>
+
+        <strong>Example 3</strong>
+        <img src="assets/BLOG2-PIC (4).JPG"> <br><br>
 
  
         
