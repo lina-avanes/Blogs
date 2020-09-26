@@ -53,6 +53,9 @@ code.mycode, pre.mypre {
 
 }
 
+
+
+
 p.my-paragraphs {color:rgb(99, 9, 102);
 font-size: x-large; 
 
@@ -76,6 +79,9 @@ p.boxes {
   margin: 0;
 
 }
+
+
+
 div.figure3{
 border: 5x solid grey;
 padding: 10px;
