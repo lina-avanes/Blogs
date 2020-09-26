@@ -63,7 +63,7 @@
                new user. Replace "username" with the name of the new user.<br> </p>
               <strong><P>For example:</P></strong> 
         
-               <blockquote><code style="color:red">sudo useradd lara</code> </blockquote> 
+               <blockquote><code style="color:red">sudo useradd Ben</code> </blockquote> 
 <br><br>
                 <strong><p class="my-paragraphs"> Creating a new group</p> <hr></strong> 
                 <p>&#9658;In order to create a new group, we will use the "groupadd" command <br>
@@ -74,9 +74,25 @@
         
               <blockquote><code style="color:red">sudo addgroup Officers</code> </blockquote> <br><br>
 
-              <strong><p class="my-paragraphs"> shadow & passwd Files</p> <hr></strong> 
-<br><br>
+              <strong><p class="my-paragraphs"> Adding a user to a group</p> <hr></strong> 
+
+            <p>&#9658;In order to add a user to a group we will need to follow the command below:</p>
+            <blockquote><code style="color:red">usermod -a -G group-name user-name</code> </blockquote> <br><br>
             
+            <p>&#9658;To add an existing user account to a group, use the command "usermod", replacing 
+              "group-name" with the name of the group you want to add the user to and "user-name" with the 
+              name of the user you want to add.<br> 
+            </p>
+            <strong><P>For example:</P></strong> 
+        
+            <blockquote><code style="color:red">sudo usermod -a -G officers Ben</code> </blockquote> <br>
+            <p>&#9658; While a user account can be part of multiple groups, one of the groups is always the 
+              “primary group” and the others are “secondary groups”. The user’s login process and files and 
+              folders the user creates will be assigned to the primary group. </p> 
+
+              <p>&#9658; Note the -g here. When you use a lowercase g, you assign a primary group. When you use an uppercase -G
+                 , as above, you assign a new secondary group.</p>
+
 
           <!-- Home page image -->
     <section>
