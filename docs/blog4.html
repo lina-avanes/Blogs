@@ -50,7 +50,7 @@
         <p>In today's blog, I will demonstrate how to check for windows updates via powershell. The commands demonstrated 
             in this blog, will allow users to scan for updates without actually having to install them. Although 
             they will have the option of installing.  </p>
-          <strong> Command #1:</strong><hr>
+          <strong> Step #1:</strong><hr>
                 Set the execution policy to remote signed.
                <pre style="background-color:rgb(29, 53, 192)"><code style="color: cornsilk;" >Set-ExecutionPolicy RemoteSigned</code> </pre> 
                 RemoteSigned requires that all scripts and configuration files downloaded from the Internet are 
@@ -58,13 +58,24 @@
             </p>
             <img src="assets/Blog4 (1).png"> <br>
 
-            <strong> Command #2:</strong><hr>
-            <p>The next command is <br>
+            <strong> Step #2:</strong><hr>
+            <p>The next command is </p><br>
                 <pre style="background-color:rgb(29, 53, 192)"><code style="color: cornsilk;" >Install-PackageProvider NuGet</code> </pre>  
                 NuGet is an open source windows provider program that allows you to manage windows machines 
                 For . NET (including . NET Core), the Microsoft-supported mechanism for sharing code is NuGet, which defines how packages 
                 for . NET are created, hosted, and consumed, and provides the tools for each of those roles. </p>
                 <img src="assets/Blog4 (2).png"> <br>
+
+
+                <strong> Step #3:</strong><hr>
+                <p> The third command is:  </p>
+                <pre style="background-color:rgb(29, 53, 192)"><code style="color: cornsilk;" >Install-Module PSWindowsUpdate</code> </pre> 
+                <p>This command allows you to control, detect, and even install windows updates on powershell.</p>
+                <img src="assets/Blog4 (3).png"> <br>
+
+
+
+
     </section>
 
       <footer>
