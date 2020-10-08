@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="en-US">
   <head>
@@ -46,7 +47,44 @@
         </nav>
       </header>
     <section>
-        <h1>Blog 5</h1>  
+        <h1>Blog 5: Encrypting & Decrypting Files - GPG </h1>  
+        <p> In today’s blog, I will be demonstrating how to encrypt and decrypt files via 
+          gpg. Gpg commands, allow you to easily encrypt and decrypt files. I will be writing a 
+          python script, in which I will be using gpg commands for the encryption/decryption
+          process.  </p>
+
+
+          <pre class="mypre">
+            <code class="mycode"> 
+              
+              #!/bin/bash
+
+              echo "This is a simple file encrypter/decrypter"
+              echo "Please choose what you want to do"
+              
+              choice="Encrypt Decrypt"
+              
+              select option in $choice; do
+                      if [ $REPLY = 1 ];
+              then
+                      echo "Please enter the filename you want to encrypt"
+                      read file;
+                      gpg -c $file
+                      echo "The file has been encrypted"
+              else
+                      echo  "Please enter the filename you want to decrypt"
+                      read file2;
+                      gpg -d $file2
+                      echo "The file has been decrypted"
+              fi
+              
+              done
+            
+            </code></pre>
+
+            <p>The Python script in details</p> 
+            <img src="assets/blog5-0(1).jpg" >
+
        
     
     </section>
@@ -59,3 +97,5 @@
     
   </body>
 </html>
+
+
