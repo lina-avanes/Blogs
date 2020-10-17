@@ -84,9 +84,20 @@
         <p> XOR for 0l;@ -->  <code style="color:palevioletred"> 1111000 0000101 0011010 10000000</code></p>
 
         <li>Fourth, you need to convert the XOR result to ASCII to get the cipher-text</li>
-        <p> Cipher-text: <code style="color:palevioletred">X &#9633; &#9633; @</code></p>
+        <p> Cipher-text: <code style="color:palevioletred">X &#9633; &#9633; @</code></p> <br>
 
 
+        <strong> Decrypt </strong>
+        <p>In order to decrypt, you need to convert the cipher-text and the key into ASCII and apply the
+             XOR operation. 
+        </p>
+
+        <li> Cipher-text: X &#9633; &#9633; @ --> <code style="color:palevioletred"> 1111000 0000101 0011010 10000000</code> </li>
+        <li> 0l;@ -->  <code style="color:green"> 1111000 0000101 0011010 10000000</code></li>
+        <li>Apply XOR to X &#9633; &#9633; @ and 0l;@</li>
+        <li> Result after XOR has been applied:  Hi! -->  <code style="color:orangered"> 1001000 1101001 0100001 00000000</code></li> 
+        <li> You will end up with one extra character which is 00000000 or NULL at the end and you can just ignore
+             it. You now have your plain-text.</li>
 
 
 
