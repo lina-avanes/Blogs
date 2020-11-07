@@ -50,8 +50,54 @@
 
       <section>
         <h1>Blog 9: How to SSH to an AWS EC2 Instance</h1>  
+        <p> In the previous blog, <a href="blog8.html">blog 8</a>, I went over 
+          how to create an AWS EC2 Instance. Now in this blog, I will go over how to 
+        SSH into a EC2 instance.</p>
+
+        <h2>Prerequisite</h2>
+        <ul>
+            <li>Must have an AWS account. (Click <a href="https://aws.amazon.com/">here</a>
+                 & sign up if you do not have an account)</li>
+
+            <li>Must have created an AWS EC2 instance and have a key pair. (Click <a href="blog8.html">here</a> to learn how) </li>
+            
+          </ul>
+
+
+        <H3>STEP 1:</H3>
+        <p>Go to your instances page on your AWS account. Select the instance 
+          that you would like to SSH into, then  copy the IP address. </p>
+          <img src="assets/blog9-1.png" height="400px" width="800px"> 
+
+
+
+          <H3>STEP 2:</H3>
+          <p>Go to your local terminal and locate the key pair file that you downloaded when 
+            creating your AWS EC2 instance. </p>
+            <img src="assets/blog9-2.png" height="400px" width="800px"> 
+
+       <H3>STEP 3:</H3>
+        <p>While in the same path as your key pair file, go ahead and enter the 
+          following command: <br>
         
-      </section>       
+          <code style="color:blueviolet">sudo ssh -i mykey.pem ubuntu@type your EC2 IP here.</code><br>
+        Then type "yes" for the question "Are you sure you want to continue connecting?"
+        </p>
+           <img src="assets/blog9-3.png" height="400px" width="800px"> 
+
+
+           <H3>STEP 4:</H3>
+           <p>You have now been connceted to your AWS EC2 Instance via SSH. </p>
+             <img src="assets/blog9-4.png" height="400px" width="800px"> 
+
+
+        
+      </section>     
+      
+      
+
+
+
       </section>
 
       <footer>
