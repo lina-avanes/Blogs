@@ -57,29 +57,54 @@
             for mobile and web application developers.  Firebase offers services 
             such authentication, real-time database, storage, hosting, and more.
              In today’s blog, I will go over how to get started with firebase 
-             hosting services.</p> <br><br>
+             hosting services.</p> <br>
              
              
-            <p> The first step is to create a Firebase account. If you have a google account, 
+            <p> -The first step is to create a Firebase account. If you have a google account, 
                 then you can just use your Google account’s credentials to sign in.  <br><br>
 
 
             
-                Once you sign in, go ahead and create a new project.<br><br>
+                -Once you sign in, go ahead and create a new project.<br><br>
                 <img src="assets/blog12-1.png" height="300px" width="800px"><br><br>
 
 
 
-                After you go through the steps of creating a project, Firebase will generate a script 
+                -After you go through the steps of creating a project, Firebase will generate a script 
                 which contains the core Firebase SDK, libraries, and the web app’s configuration script.
                  All you need to do is copy/paste the script in your HTML or JS files. 
                  <img src="assets/blog12-2.png" height="500px" width="900px"><br><br>
 
-                 Now we are going to need to install Firebase tools to be able to deploy our project to Firebase.
+                 -Now we are going to need to install Firebase tools to be able to deploy our project to Firebase.<br>
+                 Install firebase tools(CLI) on your lcoal terminal using: <br>
+                 <Code>npm install –g firebase-tools </Code> <br><br>
+
+                -Both npm and nodejs are needed in order to install firebase tools. <br>
+                -Nodejs can be installed from  <a href="https://nodejs.org/en/"> here.</a><br>
+                -Firebase tool are then used to deploy our websites to the backend. <br>
+
+                -After you have installed the Firebase tools, you will need to login to your 
+                Firebase account using:<br>
+
+                <code style="color:blue">firebase login</code><br>
+
+                -Next you are going to initialize your project using:<br>
+                <code style="color:blue">firebase init</code> <br>
+
+                -You can test your website locally using:<br>
+                <code  style="color:blue">firebase serve  </code><br>
+
+                -After you are done building your website, you can easily deploy your website to
+                 Firebase by using: <br>
+
+                 <code style="color:blue">firebase deploy </code> <br>
+
+                 And that is how you host a website on Firebase for free. <br>
+
+
 
             </p>
-
-      
+            
 
 
 
